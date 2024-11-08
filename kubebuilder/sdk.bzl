@@ -17,6 +17,7 @@ def _kubebuilder_download_sdk_impl(ctx):
         url = urls,
         sha256 = sha256,
         output = "kubebuilder",
+        executable = True,
     )
     ctx.template(
         "BUILD.bazel",
