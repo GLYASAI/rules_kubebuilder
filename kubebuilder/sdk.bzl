@@ -32,7 +32,6 @@ _kubebuilder_download_sdk = repository_rule(
                 "https://github.com/kubernetes-sigs/kubebuilder/releases/download/v{version}/kubebuilder_{platform}",
             ],
         ),
-        "strip_prefix": attr.string(default = "kubebuilder_{version}_{platform}"),
     },
 )
 
