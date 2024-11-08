@@ -16,7 +16,6 @@ def _kubebuilder_download_sdk_impl(ctx):
     strip_prefix = ctx.attr.strip_prefix.format(version = version, platform = platform)
     ctx.download(
         url = urls,
-        stripPrefix = strip_prefix,
         sha256 = sha256,
     )
     ctx.template(
