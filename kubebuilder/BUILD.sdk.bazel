@@ -10,7 +10,7 @@ exports_files([
 kubebuilder_pwd(
     name = "pwd",
     srcs = [
-        "bin/kubebuilder",
+        "kubebuilder",
     ],
-    kubebuilder_binary = "bin/kubebuilder",
+    kubebuilder_binary = "kubebuilder",
 )

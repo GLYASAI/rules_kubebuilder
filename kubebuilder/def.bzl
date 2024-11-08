@@ -29,7 +29,7 @@ _kubebuilder = rule(
     implementation = _kubebuilder_impl,
     attrs = {
         "_kubebuilder": attr.label(
-            default = "@kubebuilder_sdk//:bin/kubebuilder",
+            default = "@kubebuilder_sdk//:kubebuilder",
             allow_single_file = True,
             cfg = "host",
             executable = True,
